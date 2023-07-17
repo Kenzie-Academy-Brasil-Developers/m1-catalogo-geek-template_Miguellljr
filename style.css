@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+.navigation {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+#button1{
+    margin-left: auto;
+}
+
+.buttons {
+  width: 150px;
+  height: 40px;
+  font-weight: normal;
+  font-size: 20px;
+
+  background-color: rgb(10, 153, 254, 0.1);
+  border-radius: 8px;
+  color: #0a99fe;
+  border: 0px;
+  transition: background 0.3s;
+  margin: 3px;
+
+}
+
+.buttons:hover {
+  color: #ffffff;
+  background-color: #0a99fe;
+}
+
+.titles {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 40px 0px 50px 30px;
+
+  color: #1b1b1b;
+}
+
+.paintings {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 20px;
+  overflow-x: auto;
+}
+
+.figures {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  min-width: 207px;
+  height: 275px;
+  background-color: rgb(134, 131, 131, 0.2);
+  margin: 10px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card .product-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 30px 10px;
+}
+
+.card .text {
+  color: #868383;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+}
