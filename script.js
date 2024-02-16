@@ -69,65 +69,61 @@ const productsArray = [
   },
 ];
 
-
 function createItems(str, arr) {
   let paintingsList = document.querySelector(".paintings");
- 
-  
+
   for (let i = 0; i < arr.length; i++) {
     const productsArray = arr[i];
-    
+
     let li = document.createElement("li");
     let img = document.createElement("img");
     let product = document.createElement("h3");
     let price = document.createElement("p");
-    
+
     li.classList.add("card");
-    
+
     img.src = productsArray.image;
-    
+
     product.classList.add("product-name");
     product.innerText = productsArray.name;
-    
+
     price.classList.add("text");
     price.innerText = productsArray.price;
-    
+
     li.appendChild(img);
     li.appendChild(product);
     li.appendChild(price);
-    
+
     paintingsList.appendChild(li);
   }
 
   let figuresList = document.querySelector(".figures");
-  
+
   for (let i = 0; i < str.length; i++) {
     const productsArray = str[i];
-    
+
     let li = document.createElement("li");
     let img = document.createElement("img");
     let product = document.createElement("h3");
     let price = document.createElement("p");
-    
+
     li.classList.add("card");
-    
+
     img.src = productsArray.image;
-    
+
     product.classList.add("product-name");
     product.innerText = productsArray.name;
-    
+
     price.classList.add("text");
     price.innerText = productsArray.price;
-    
+
     li.appendChild(img);
     li.appendChild(product);
     li.appendChild(price);
-    
+
     figuresList.appendChild(li);
   }
-
 }
-
 
 const actionFiguresArray = [];
 
@@ -146,4 +142,4 @@ function separateItems(productsArray) {
 
 separateItems(productsArray);
 
-createItems(actionFiguresArray,paintingsArray);
+createItems(actionFiguresArray, paintingsArray);
